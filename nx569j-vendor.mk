@@ -134,7 +134,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx569j/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/nubia/nx569j/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/nubia/nx569j/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
-    vendor/nubia/nx569j/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/nubia/nx569j/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/nubia/nx569j/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/nubia/nx569j/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
@@ -146,7 +145,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx569j/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/nubia/nx569j/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/nubia/nx569j/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
-    vendor/nubia/nx569j/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/nubia/nx569j/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     vendor/nubia/nx569j/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/nubia/nx569j/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
@@ -218,6 +216,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx569j/proprietary/lib64/libfpnav.so:system/lib64/libfpnav.so \
     vendor/nubia/nx569j/proprietary/lib64/libfpservice.so:system/lib64/libfpservice.so \
     vendor/nubia/nx569j/proprietary/lib64/libhistutil.so:system/lib64/libhistutil.so \
+    vendor/nubia/nx569j/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
+    vendor/nubia/nx569j/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/nubia/nx569j/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/nubia/nx569j/proprietary/lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so \
     vendor/nubia/nx569j/proprietary/lib64/libmpbase.so:system/lib64/libmpbase.so \
@@ -1328,8 +1328,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx569j/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
     vendor/nubia/nx569j/proprietary/vendor/lib64/libhwdaphal.so:system/vendor/lib64/libhwdaphal.so \
     vendor/nubia/nx569j/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
-    vendor/nubia/nx569j/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
-    vendor/nubia/nx569j/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
     vendor/nubia/nx569j/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
     vendor/nubia/nx569j/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/nubia/nx569j/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
@@ -1407,8 +1405,8 @@ PRODUCT_PACKAGES += \
     CNEService \
     QtiTetherService \
     com.qualcomm.location \
-    qcrilmsgtunnel \
     ims \
+    qcrilmsgtunnel \
     imssettings \
     ifaa_fingerprint \
     qcnvitems \
